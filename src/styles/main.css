@@ -1,0 +1,87 @@
+:root {
+  --primary_color: #00b3ad;
+  --black_color: #000;
+  --secondary_black_color: rgb(92, 92, 92);
+  --tertiary_black_color: rgb(146, 146, 146);
+  --white_color: #fff;
+  --three_mili: all 0.3s ease;
+  --primary_font_family: "Poppins", sans-serif;
+  --secondary_font_family: "Bricolage Grotesque", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary_font_family);
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  /* FONT SIZES */
+  --primary_header: 2.5rem;
+  --secondary_header: 2rem;
+  --tertiary_header: 1.5rem;
+  --body_text: 1rem;
+  --label_text: 1rem;
+  --four-em-margin: 6em;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    /* FONT SIZES */
+    --primary_header: 2.2rem;
+    --secondary_header: 1.8rem;
+    --tertiary_header: 1.2rem;
+    --body_text: 1.1rem;
+    --label_text: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    /* FONT SIZES */
+    --primary_header: 2rem;
+    --secondary_header: 1.5rem;
+    --tertiary_header: 1.2rem;
+    --body_text: 1rem;
+    --label_text: 0.8rem;
+    --four-em-margin: 4em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    /* FONT SIZES */
+    --primary_header: 1.5rem;
+    --secondary_header: 1.3rem;
+    --tertiary_header: 1.2rem;
+    --body_text: 1rem;
+    --label_text: 0.8rem;
+    --four-em-margin: 3em;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* !NAVBAR STYLES */
